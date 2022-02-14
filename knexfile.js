@@ -5,10 +5,10 @@ module.exports = {
  production: {
     client: 'postgresql',
     connection: {
-      database: 'd1l83l3kkmi1l1',
-      host:'ec2-52-45-83-163.compute-1.amazonaws.com',
-      user:     'gtccawsfnczqsg',
-      password: '9cf2dff9af900ef08ea9dfc50566c7bdf4c4f66bca0aaf690f924360202e5509'
+      database: 'd5et1ba2iu689n',
+      host:'ec2-18-211-41-100.compute-1.amazonaws.com',
+      user:     'sctwvtmozovkwy',
+      password: 'b579cbe9cae7cd4306848467e08d5ea87e07e4172d278f0620c4840a71e20051'
       // ssl: { rejectUnauthorized: false }
     },
     pool: {
