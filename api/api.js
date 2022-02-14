@@ -4,9 +4,6 @@ const method  = require('../methods/validation')
 
 const bcrypt  = require('bcrypt')
 const express = require('express')
-const cors    = require('cors')
-
-app.use(cors({origin:'*'}))
 
 const server  = express.Router()
 
