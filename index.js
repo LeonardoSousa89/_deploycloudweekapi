@@ -14,11 +14,11 @@ app.use(log('dev'))
 
 app.use('/', server)
 
-// app.use(cors({origin:'https://cloudweek.netlify.app/', credentials: true }))
+app.use(cors({origin:'https://cloudweek.netlify.app/', credentials: true }))
 
 // app.use(cors('*'))
 
-app.use(cors())
+// app.use(cors())
 
 // app.use((req, res, next) => {
 //     res.header("Access-Control-Allow-Origin", "*")
