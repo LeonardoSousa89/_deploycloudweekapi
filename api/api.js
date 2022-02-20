@@ -58,7 +58,7 @@ server.route('/login').post(async(req, res)=>{
                    return db.where({email: user.email})
                             .first()
                             .table('authtest')
-                            .then(_ => res.status(200).redirect('https://cloudweek.netlify.app/app/index.html'))
+                            .then(_ => res.status(200).json())
                             // .then(_ => res.status(200).redirect('http://127.0.0.1:5500/app/index.html'))
                             .catch(err => res.status(400).json(err))
          }
@@ -68,3 +68,5 @@ server.route('/login').post(async(req, res)=>{
 
 
 module.exports = server
+
+//.redirect('https://cloudweek.netlify.app/app/index.html')
