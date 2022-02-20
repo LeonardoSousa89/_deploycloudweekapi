@@ -8,13 +8,12 @@ const log     = require('morgan')
 
 const app     = express()
 
-app.use(cors({ origin:'https://cloudweek.netlify.app/' }))
+app.use(cors()) // { origin:'https://cloudweek.netlify.app/' }
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 app.use(log('dev'))
 
 app.use('/', server)
-
 
 
 app.listen(process.env.PORT || _PORT,()=>{
