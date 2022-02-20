@@ -10,7 +10,8 @@ const app     = express()
 
 app.use(cors({ origin:'https://cloudweek.netlify.app/',
                credentials: true,
-               allowedHeaders:'Content-Type'}))
+               allowedHeaders:'Content-Type',
+               methods:'GET, PUT, DELETE, POST'}))
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 app.use(log('dev'))
