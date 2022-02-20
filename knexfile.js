@@ -9,7 +9,8 @@ module.exports = {
       host:'ec2-18-211-41-100.compute-1.amazonaws.com',
       user:     'sctwvtmozovkwy',
       password: 'b579cbe9cae7cd4306848467e08d5ea87e07e4172d278f0620c4840a71e20051',
-      ssl: { rejectUnauthorized: false }
+      ssl: true ,
+      // ssl: { rejectUnauthorized: false }
     },
     pool: {
       min: 2,
