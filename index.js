@@ -10,7 +10,7 @@ const app     = express()
 
 // app.use(cors({origin:'*'})) 
 app.use(cors({
-    origin:'https://cloudweek.netlify.app/'
+    origin:'https://cloudweek.netlify.app/', credentials: true
 })) 
        
 app.use(express.urlencoded({extended:true}))
