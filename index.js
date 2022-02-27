@@ -8,12 +8,12 @@ const log     = require('morgan')
 
 const app     = express()
 
-app.use(cors({origin:'*'})) 
-// app.use(cors({
-//     origin:'https://cloudweek.netlify.app/',
-//     allowedHeaders:'Content-type',
-//     methods: ['GET', 'POST', 'PUT', 'DELETE']
-// })) 
+// app.use(cors({origin:'*'})) 
+app.use(cors({
+    origin:'https://cloudweek.netlify.app/',
+    allowedHeaders:'Content-type',
+    methods: ['GET', 'POST', 'PUT', 'DELETE']
+})) 
        
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
